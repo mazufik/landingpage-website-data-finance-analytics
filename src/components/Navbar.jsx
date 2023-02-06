@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
+import { HiMenuAlt3, HiX } from 'react-icons/hi';
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -42,14 +42,11 @@ const Navbar = () => {
       </ul>
       <div onClick={handleNav} className='block md:hidden'>
         {nav ? (
-          <AiOutlineClose
-            className='hover:text-[#89d6fb] cursor-pointer'
-            size={20}
-          />
+          <HiX className='hover:text-[#89d6fb] cursor-pointer' size={25} />
         ) : (
-          <AiOutlineMenu
+          <HiMenuAlt3
             className='hover:text-[#89d6fb] cursor-pointer'
-            size={20}
+            size={25}
           />
         )}
       </div>

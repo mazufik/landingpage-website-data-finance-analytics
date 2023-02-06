@@ -1,9 +1,15 @@
 import React from 'react';
 import Typed from 'react-typed';
+import { motion } from 'framer-motion';
 
 const Hero = () => {
   return (
-    <div className='text-[#d4f0fc]'>
+    <motion.div
+      initial={{ opacity: 0, y: -50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5 }}
+      className='text-[#d4f0fc]'
+    >
       <div className='max-w-[800px] mt-[-96px] w-full h-screen mx-auto text-center flex flex-col justify-center'>
         <p className='text-[#02a9f7] font-bold p-2'>
           GROWING WITH DATA ANALYTICS
@@ -31,7 +37,7 @@ const Hero = () => {
           Get Started
         </button>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

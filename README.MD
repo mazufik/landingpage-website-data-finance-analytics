@@ -1,3 +1,3 @@
-# Landing Page Website With React
+# Responsive Landing Page Website With React
 
-a simpel landingpage for Data Finance Analytics with React and Vite
+a simpel responsive landingpage for Data Finance Analytics with React, Vite and Framer Motion
