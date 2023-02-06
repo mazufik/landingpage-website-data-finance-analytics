@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: linear-gradient(to top, #02577a, #01303f);
+}
+
+.animasi-middle {
+  display: inline-block;
+  position: relative;
+  padding-bottom: 3px;
+}
+.animasi-middle:after {
+  content: '';
+  display: block;
+  margin: auto;
+  height: 2px;
+  width: 0px;
+  background: transparent;
+  transition: width 0.5s ease, background-color 0.5s ease;
+}
+.animasi-middle:hover:after {
+  width: 100%;
+  background: #89d6fb;
+}
